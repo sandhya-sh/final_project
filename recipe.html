@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <title>TwiHerb</title>
+</head>
+
+<body>
+  <header>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="TwiHerb logo" />
+      </div>
+      <h1 class="brand-name">TwiHerb</h1>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe.html" class="active">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="recipes-main">
+    <label for="searchInput" class="searchInput">Search Recipes:</label>
+    <section class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search recipes...">
+      <div class="filter-buttons">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="soup">Soups</button>
+        <button class="filter-btn" data-filter="salad">Salads</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+      </div>
+    </section>
+
+    <section class="recipe-gallery">
+      <h1>All Recipes</h1>
+      <!-- Overall Gallery View -->
+      <div class="recipe-grid">
+
+        <article class="recipe-card soup" onclick="openRecipeDetail('supergreens')">
+          <img src="images/green-soup.jpg" alt="Super Greens Soup">
+          <h2>Immune Boosting Super Greens Soup</h2>
+        </article>
+
+        <article class="recipe-card soup" onclick="openRecipeDetail('butternut')">
+          <img src="images/Butternut-squash-sage-soup.jpg" alt="Butternut Squash and Sage Soup">
+          <h2>Butternut Squash & Sage Soup</h2>
+        </article>
+
+        <article class="recipe-card salad" onclick="openRecipeDetail('couscous')">
+          <img src="images/Lime-Pistachio-Giant-Cous-Cous-.jpg" alt="Giant Cous Cous Salad">
+          <h2>Giant Cous Cous Salad</h2>
+        </article>
+
+        <article class="recipe-card dessert" onclick="openRecipeDetail('pudding')">
+          <img src="images/Chocolate-Protein-Pudding.jpg" alt="Chocolate Protein Pudding">
+          <h2>Chocolate Protein Pudding</h2>
+        </article>
+
+      </div>
+    </section>
+    <div id="myRecipeModal" class="modal">
+
+      <!-- Hidden Panels for Recipe Detail View -->
+      <div class="recipe-detail" id="supergreens">
+        <div class="popup-inner">
+
+          <div class="inner-head-container">
+            <img src="images/green-soup.jpg" alt="Super Greens Soup">
+            <div class="head_text">
+              <h2>Immune Boosting Super Greens Soup</h2>
+              <p>This immune-boosting super greens soup is quick and easy to make, and a real nutritional powerhouse.
+                It's packed with nutrients and contains a variety of antioxidant-rich green vegetables as well as
+                turmeric, ginger, garlic and lime to really give you a boost!</p>
+              <div class="quick-info">
+                <div><strong>Prep Time</strong><br>5 mins</div>
+                <div><strong>Cook Time</strong><br>20 mins</div>
+                <div><strong>Total Time</strong><br>25 mins</div>
+                <div><strong>Course</strong><br>Soup</div>
+                <div><strong>Servings</strong><br>4</div>
+                <div><strong>Calories</strong><br>129 kcal</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Ingredients</h2>
+          <ul>
+            <li>1 tbsp olive oil</li>
+            <li>1 large onion</li>
+            <li>1 tsp sea salt</li>
+            <li>3 cloves garlic</li>
+            <li>Thumb sized piece of ginger</li>
+            <li>1 tsp ground turmeric</li>
+            <li>½ tsp chilli powder</li>
+            <li>1¼ litres of vegetable stock (5 cups)</li>
+            <li>250 ml unsweetened soya milk (1 cup)</li>
+            <li>1 large head of broccoli</li>
+            <li>1 courgette</li>
+            <li>200 g spinach or kale (about 3-4 cups)</li>
+            <li>Juice of a lime</li>
+            <li>Handful of fresh coriander</li>
+          </ul>
+
+          <h2>Instructions</h2>
+          <ol>
+            <li>Chop the onion, garlic and ginger. Heat the oil in a large pan and fry the onion for 5
+              mins. Add the garlic, ginger, salt and spices and fry for another couple of minutes.</li>
+            <li>Whilst the onion is frying, chop the broccoli and courgette into chunks. Add the stock,
+              milk, broccoli and courgette to the pan and cook for about 10 mins. Add the spinach
+              for a minute or two (at the end) to wilt. Finally, add the lime juice and coriander (and
+              season to taste)</li>
+            <li>Add everything to a blender and blend until smooth. Check the seasoning, add more if
+              required, and serve.</li>
+          </ol>
+
+          <h2>Notes</h2>
+          <ul>
+            <li>Finish the soup with an optional drizzle of vegan cream and a few pumpkin seeds for
+              a bit of crunch</li>
+            <li>If you are very hungry and want to up calories then add in some beans or chickpeas-
+              you can either do this before you blend, so it stays smooth or add them afterwards to
+              give it some bite.</li>
+            <li>If you don't like soya milk you can sub for any plant milk.
+              If you prefer this oil free then you can cook the onion and garlic in some water instead
+              of oil.</li>
+            <li> It will last for 3-4 days in a sealed tub in the fridge and freezes well</li>
+
+          </ul>
+
+          <h2>Nutrition (per serving)</h2>
+          <div class="nutrition-info">
+            <span><strong>Calories:</strong> 129 kcal</span>
+            <span><strong>Carbohydrates:</strong> 15.4g</span>
+            <span><strong>Protein:</strong> 7.4g</span>
+            <span><strong>Fat:</strong> 6.1g</span>
+            <span><strong>Saturated Fat:</strong> 1g</span>
+            <span><strong>Fiber:</strong> 5.7g</span>
+          </div>
+
+          <!-- Button section at the bottom -->
+          <div class="popup-actions">
+            <button class="close-btn" onclick="closeRecipeDetail('supergreens')"><i class="fas fa-times"></i>
+              Close</button>
+            <button class="print-btn" onclick="printRecipe('supergreens')"><i class="fas fa-print"></i> Print
+              Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-detail" id="butternut">
+        <div class="popup-inner">
+          <div class="inner-head-container">
+            <img src="images/Butternut-squash-sage-soup.jpg" alt="Butternut Squash & Sage Soup">
+            <div class="head_text">
+              <h2>Butternut Squash & Sage Soup</h2>
+              <p>With all the colours of autumn, this butternut squash and sage soup is a must make for the colder
+                months. It's easy to make too; just cook and blend. The addition of red lentils really ups the
+                nutritional profile of the recipe, as they are high in iron, protein and fibre.</p>
+
+              <div class="quick-info">
+                <div><strong>Prep Time</strong><br>10 mins</div>
+                <div><strong>Cook Time</strong><br>30 mins</div>
+                <div><strong>Total Time</strong><br>10 mins</div>
+                <div><strong>Course</strong><br>Soup</div>
+                <div><strong>Servings</strong><br>6</div>
+                <div><strong>Calories</strong><br>214 kcal</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Ingredients</h2>
+          <ul>
+            <li>1 tbsp olive oil</li>
+            <li>1 large onion or leek</li>
+            <li>2 garlic cloves</li>
+            <li>4-5 carrots</li>
+            <li>1medium butternut squash</li>
+            <li>1 tsp sea salt & lots of black pepper</li>
+            <li>2 sprigs rosemary chopped</li>
+            <li>4-5 leaves fresh sage chopped</li>
+            <li>1 cup dried red lentils (190g)</li>
+            <li>8 cups 2 litres of veg stock (2 litres)</li>
+          </ul>
+
+          <h2>Instructions</h2>
+          <ol>
+
+            <li>Chop the onion/leek and garlic. Heat up the oil in a large pan and fry for a couple of
+              minutes.</li>
+            <li>Peel and chop the squash and carrots. Add to the pan with all the other ingredients
+              and bring to the boil. Simmer until the vegetables and lentils are cooked (about 25
+              minutes).</li>
+            <li>Once cooked, blend until smooth (I just use a stick blender for this). Serve with some
+              fried sage leaves and a sprinkle of pumpkin seeds (optional).</li>
+          </ol>
+
+          <h2>Notes</h2>
+          <ul>
+            <li>Feel free to sub in sweet potatoes for either the squash or the carrots.
+              Alternatively, use any type of squash you have instead of butternut.</li>
+            <li>Peel your squash first before chopping-it makes it so much easier to chop!</li>
+            <li> It will last for 3-4 days in a sealed tub in the fridge and freezes well</li>
+
+          </ul>
+
+          <h2>Nutrition (per serving)</h2>
+          <div class="nutrition-info">
+            <span><strong>Calories:</strong> 214 kcal</span>
+            <span><strong>Carbohydrates:</strong> 28.2g</span>
+            <span><strong>Protein:</strong> 8.3g</span>
+            <span><strong>Fat:</strong> 3.4g</span>
+            <span><strong>Fiber:</strong> 5.1g</span>
+          </div>
+
+          <!-- Button section at the bottom -->
+          <div class="popup-actions">
+            <button class="close-btn" onclick="closeRecipeDetail('butternut')"><i class="fas fa-times"></i>
+              Close</button>
+            <button class="print-btn" onclick="printRecipe('butternut')"><i class="fas fa-print"></i> Print
+              Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-detail" id="couscous">
+        <div class="popup-inner">
+          <div class="inner-head-container">
+            <img src="images/Lime-Pistachio-Giant-Cous-Cous-.jpg" alt="Giant Cous Cous Salad">
+            <div class="head_text">
+              <h2>Giant Cous Cous Salad</h2>
+              <p>If you are looking for a fun and filling side salad for BBQs or family gatherings, this giant cous cous
+                salad is just the thing. It takes less than 15 minutes to make and is easy to prep ahead too. Full of
+                fresh flavours, it will be a firm favourite.</p>
+              <div class="quick-info">
+                <div><strong>Prep Time</strong><br>5 mins</div>
+                <div><strong>Cook Time</strong><br>10 mins</div>
+                <div><strong>Total Time</strong><br>15 mins</div>
+                <div><strong>Course</strong><br>Salad</div>
+                <div><strong>Servings</strong><br>4</div>
+                <div><strong>Calories</strong><br>523 kcal</div>
+              </div>
+            </div>
+          </div>
+          <h2>Ingredients</h2>
+          <h3>Main Ingredients</h3>
+          <ul>
+            <li>1 cup dried giant cous cous (160g)</li>
+            <li>1 cup cooked sweetcorn (165g)</li>
+            <li>1½ cups cooked chickpeas (250g)</li>
+            <li>½ cucumber</li>
+            <li>Handful of fresh parsley</li>
+            <li>Handful of fresh mint</li>
+            <li>4 tbsp chopped pistachios</li>
+            <li>4 tbsp pumpkin seeds</li>
+            <li>Pomegranate seeds optional</li>
+          </ul>
+          <h3>Lime vinaigrette ingredients:</h3>
+          <ul>
+            <li>Juice and zest of 2 large limes</li>
+            <li>3 tbsp olive oil</li>
+            <li>2 tsp maple syrup</li>
+            <li>Salt and pepper</li>
+          </ul>
+
+          <h2>Instructions</h2>
+          <ol>
+
+            <li>Cook the cous cous (add to boiling water and simmer until soft - it only takes about
+              8-9 minutes).</li>
+            <li>Whilst the cous cous is cooking, make the vinaigrette by adding all the ingredients to
+              a jar and shaking well. Chop the cucumber into small chunks and finely chop the
+              herbs.</li>
+            <li>Once the cous cous is ready, drain and rinse under cold water and then add to a large
+              serving bowl with all the other ingredients, pour over the dressing and mix and serve.</li>
+          </ol>
+
+          <h2>Notes</h2>
+          <ul>
+            <li>This can be made gluten free if you use quinoa or brown rice.</li>
+            <li> It will last for 3-4 days in a sealed tub in the fridge and freezes well</li>
+
+          </ul>
+
+          <h2>Nutrition (per serving)</h2>
+          <div class="nutrition-info">
+            <span><strong>Calories:</strong> 523 kcal</span>
+            <span><strong>Carbohydrates:</strong> 65.4g</span>
+            <span><strong>Protein:</strong> 18g</span>
+            <span><strong>Fat:</strong> 23g</span>
+            <span><strong>Saturated Fat:</strong> 3.4g</span>
+            <span><strong>Fiber:</strong> 11.9g</span>
+          </div>
+
+          <!-- Button section at the bottom -->
+          <div class="popup-actions">
+            <button class="close-btn" onclick="closeRecipeDetail('couscous')"><i class="fas fa-times"></i>
+              Close</button>
+            <button class="print-btn" onclick="printRecipe('couscous')"><i class="fas fa-print"></i> Print
+              Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-detail" id="pudding">
+        <div class="popup-inner">
+          <div class="inner-head-container">
+            <img src="images/Chocolate-Protein-Pudding.jpg" alt="Chocolate Protein Pudding">
+            <div class="head_text">
+              <h2>Chocolate Protein Pudding</h2>
+              <p>Full of chocolate flavour and packed with protein and fibre, you’ll definitely want to try these
+                chocolate protein puddings! Make them on repeat for a nourishing and delicious breakfast or dessert. No
+                protein powder required either, just lots of nutritious whole foods.</p>
+              <div class="quick-info">
+                <div><strong>Prep Time</strong><br>5 mins</div>
+                <div><strong>Total Time</strong><br>5 mins</div>
+                <div><strong>Course</strong><br>Dessert</div>
+                <div><strong>Servings</strong><br>3</div>
+                <div><strong>Calories</strong><br>363 kcal</div>
+              </div>
+            </div>
+          </div>
+          <h2>Ingredients</h2>
+          <h3>Pudding ingredients</h3>
+          <ul>
+            <li>1 large banana</li>
+            <li>½ cup shelled hemp seeds (60g)</li>
+            <li>⅓cup chia seeds (55g)</li>
+            <li>¼ cup cacao powder (25g)</li>
+            <li>2 tbsp almond butter</li>
+            <li>1½ cups unsweetened soya milk (375ml)</li>
+          </ul>
+          <h3>Optional toppings:</h3>
+          <ul>
+            <li>Soya yoghurt, banana and cacao nibs</li>
+          </ul>
+
+          <h2>Instructions</h2>
+          <ol>
+
+            <li>Put all the pudding ingredients into a blender and blend until smooth. Pour into 3
+              glasses and refrigerate for an hour or overnight.</li>
+            <li>When ready to serve, top with an optional 2 tbsp of yoghurt, some banana slices and
+              a sprinkle of cacao nibs.</li>
+          </ol>
+
+          <h2>Notes</h2>
+          <ul>
+            <li>The nutritional information is based upon the pudding without the optional toppings.</li>
+            <li> It will last for 3-4 days in a sealed tub in the fridge and freezes well</li>
+            <li>You can use any milk you like for these. I use organic soya milk as I like the extra
+              protein it gives.</li>
+
+          </ul>
+
+          <h2>Nutrition (per serving)</h2>
+          <div class="nutrition-info">
+            <span><strong>Calories:</strong> 523633 kcal</span>
+            <span><strong>Carbohydrates:</strong> 22.1g</span>
+            <span><strong>Protein:</strong> 19.9g</span>
+            <span><strong>Fat:</strong> 23.6g</span>
+            <span><strong>Saturated Fat:</strong> 2.1g</span>
+            <span><strong>Fiber:</strong> 10.3g</span>
+          </div>
+
+          <!-- Button section at the bottom -->
+          <div class="popup-actions">
+            <button class="close-btn" onclick="closeRecipeDetail('pudding')"><i class="fas fa-times"></i>
+              Close</button>
+            <button class="print-btn" onclick="printRecipe('pudding')"><i class="fas fa-print"></i> Print
+              Recipe</button>
+          </div>
+        </div>
+      </div>
+        <div class="animation-container">
+          <dotlottie-player src="https://lottie.host/4ed5d382-8882-4eae-abcc-9a7d25c215c8/8zabuDVGdo.lottie"
+          background="transparent" speed="1" style="width: 400px; height: 400px" loop autoplay></dotlottie-player>
+          <p>Hi there! I’m just a humble potato, wrapped in my favorite scarf and strolling through the seasons. Around here, we believe good food doesn’t need to be fancy—it just needs heart, herbs, and a little warmth</p>
+        </div>
+      <div id="overlay" class="overlay"></div>
+  </main>
+
+  <!-- Footer  -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="TwiHerb logo">
+        <p>Simple. Plant‑based. From Sandhya’s kitchen to yours.</p>
+        <p class="project-credit">SI&nbsp;539 Final Project</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="mailto:sandysh@umich.edu">Email Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2025&nbsp;TwiHerb · Built by Sandhya&nbsp;Sharma</div>
+  </footer>
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top">↑ Back to Top</button>
+</body>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <title>TwiHerb</title>
+  <meta name="description" content="TwiHerb - Simple, seasonal vegan recipes curated by Sandhya Sharma." />
+</head>
+
+<body>
+  <header>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="TwiHerb logo" />
+      </div>
+      <h1 class="brand-name">TwiHerb</h1>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-text">
+        <dotlottie-player src="https://lottie.host/19a96ec5-2c16-4a8b-b643-c286e8163510/KFCkbePWV6.lottie"
+          background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+
+        <h1>Wholesome Vegan Goodness</h1>
+        <p>At TwiHerb, we celebrate twilight moments through plant-based recipes that nourish the soul and bring calm
+          to your day. Simple, seasonal, and always satisfying.</p>
+        <a href="#Popular-dishes" class="cta-button">Explore Recipes</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-dish.png" alt="Delicious vegan dish" />
+
+      </div>
+    </section>
+
+    <section class="popular-recipes" id="Popular-dishes">
+      <h2>Popular Recipes</h2>
+
+      <article class="highlight-card">
+        <img src="images/Butternut-squash-sage-soup.jpg" alt="Butternut Squash and Sage Soup" class="highlight-img">
+        <div class="highlight-content">
+          <h3>Butternut Squash and Sage Soup</h3>
+          <div class="tags"><span class="tag">Soup</span> <span class="tag">Fall</span></div>
+          <p>A warming blend of roasted squash, fresh sage, and creamy coconut milk — perfect for cozy fall nights.
+            Elegant, simple, and satisfying.</p>
+          <a href="recipe.html" class="read-more">READ MORE</a>
+        </div>
+      </article>
+
+      <article class="highlight-card">
+        <img src="images/Lime-Pistachio-Giant-Cous-Cous-.jpg" alt="Lime & Pistachio Giant Cous Cous"
+          class="highlight-img">
+        <div class="highlight-content">
+          <h3>Giant Cous Cous Salad with Lime & Pistachio</h3>
+          <div class="tags"><span class="tag">Salad</span> <span class="tag">Lunch</span></div>
+          <p>Zingy lime, crunchy pistachios, and vibrant herbs make this giant cous cous salad a bright and refreshing
+            bowl of flavor and texture.</p>
+          <a href="recipe.html" class="read-more">READ MORE</a>
+        </div>
+      </article>
+
+      <article class="highlight-card">
+        <img src="images/Chocolate-Protein-Pudding.jpg" alt="Chocolate Protein Pudding" class="highlight-img">
+        <div class="highlight-content">
+          <h3>Chocolate Protein Pudding</h3>
+          <div class="tags"><span class="tag">Dessert</span> <span class="tag">High-Protein</span></div>
+          <p>Decadent yet nourishing, this smooth and creamy chocolate pudding is packed with protein and plant-based
+            goodness. Dessert goals, unlocked.</p>
+          <a href="recipe.html" class="read-more">READ MORE</a>
+        </div>
+      </article>
+
+      <article class="highlight-card">
+        <img src="images/green-soup.jpg" alt="Immune Boosting Super Greens Soup" class="highlight-img">
+        <div class="highlight-content">
+          <h3>Immune Boosting Super Greens Soup</h3>
+          <div class="tags"><span class="tag">Soup</span> <span class="tag">Detox</span></div>
+          <p>Support your immune system with this vibrant green soup made with broccoli, kale, and peas — finished with
+            lemon and olive oil for brightness.</p>
+          <a href="recipe.html" class="read-more">READ MORE</a>
+        </div>
+      </article>
+   
+    </section>
+   
+   
+
+  </main>
+  <!-- Footer  -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="TwiHerb logo">
+        <p>Simple. Plant‑based. From Sandhya’s kitchen to yours.</p>
+        <p class="project-credit">SI&nbsp;539 Final Project</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="mailto:sandysh@umich.edu">Email Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2025&nbsp;TwiHerb · Built by Sandhya&nbsp;Sharma</div>
+  </footer>
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top">↑ Back to Top</button>
+</body>
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</html>
