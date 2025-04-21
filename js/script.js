@@ -17,16 +17,8 @@ const buttons = document.querySelectorAll(".filter-btn");
 
     function openRecipeDetail(id) {
       document.getElementById(id).style.display = 'block';
-    }
-
-    function closeRecipeDetail(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-
-    function openRecipeDetail(id) {
-      document.getElementById(id).style.display = 'block';
       document.getElementById('overlay').style.display = 'block';
-    }
+     }
 
     function closeRecipeDetail(id) {
       document.getElementById(id).style.display = 'none';
